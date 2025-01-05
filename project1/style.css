@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    padding:50px;
+    border:10px solid black;
+    overflow-x: hidden;
+    
+}
+
+.section1{   
+    display: flex;  
+    /* justify-content: ; */
+    gap:10px;
+    align-items: end;
+}
+
+img{
+     border-radius: 100px;
+}
+.aTagLink{
+    display:block;
+    text-align:center ;
+}
+footer{
+    text-align: end;
+}
+.section1 p{
+    text-align: end;
+}
+
+ul{
+    padding:1rem;
+}

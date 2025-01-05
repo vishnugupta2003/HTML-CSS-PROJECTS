@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="styleSheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div id="box" class="box-1">
+          <h1>Job Application <small>(web)</small></h1>
+        </div>
+        <div id="box" class="box-2">
+          <p>Firstname</p>
+          <input type="test" />
+        </div>
+        <div id="box" class="box-3">
+          <p>Lastname</p>
+          <input type="test" />
+        </div>
+        <div id="box" class="box-4">
+          <p>Email</p>
+          <input type="email" />
+        </div>
+        <div id="box" class="box-5">
+          <p>Job Role</p>
+          <input type="text" placeholder="Select Job Role" list="job-role" />
+          <datalist id="job-role">
+            <option value="web devlopment">web devlopment</option>
+            <option value="software devlopment">software devlopment</option>
+            <option value="data analytics">data analytics</option>
+            <option value="data scientist">data scientist</option>
+            <option value="software tester">software tester</option>
+          </datalist>
+        </div>
+        <div id="box" class="box-6">
+          <p>Address</p>
+
+          <textarea type="text" rows="6"></textarea>
+        </div>
+        <div id="box" class="box-7">
+          <p>city</p>
+          <input type="text" />
+        </div>
+        <div id="box" class="box-8">
+          <p>Pincode</p>
+          <input type="number" min="0" />
+        </div>
+        <div id="box" class="box-9">
+          <p>Start Date</p>
+          <input type="date" />
+        </div>
+        <div id="box" class="box-10">
+          <p>Upload You Cv</p>
+          <input type="file" id="file" name="Image" onchange="checkFile()" />
+        </div>
+        <button class="btn">Apply Now</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

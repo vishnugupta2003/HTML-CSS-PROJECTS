@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full blog title</title>
+    <style>
+      * {
+        margin: 0;
+        /* padding: 0; */
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        display: flex;
+        place-content: center;
+      }
+
+      .container {
+        background-color: white;
+        height: 100%;
+        width: 60%;
+        margin: 1rem;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        grid-template-columns: 1fr 10rem;
+        grid-template-areas: 'hd hd' 'ls rs';
+        gap: 2rem;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      #header {
+        grid-area: hd;
+      }
+
+      .pTag {
+        border: 1px solid black;
+      }
+
+      .Example {
+        border: 1px solid black;
+      }
+
+      #box-1 {
+        grid-area: ls;
+      }
+
+      #box-2 {
+        grid-area: rs;
+      }
+
+      .about {
+        display: block;
+        background-color: lightgray;
+        padding: 1rem;
+      }
+      .btn1 {
+        border: 1px solid blue;
+        border-radius: 20px;
+        color: blue;
+        background-color: white;
+      }
+      .btn2 {
+        border: 1px solid green;
+        border-radius: 20px;
+        color: green;
+        background-color: white;
+      }
+      .btn1:active {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header" id="header">
+        <u>subscribe</u>
+        <h1>Blog Title</h1>
+        <p>&#x1F50D;</p>
+      </div>
+      <br />
+      <div id="box-1">
+        <section>
+          <h2>Sample blog post</h2>
+          <small>January 5,2024 by <u>Mark</u></small>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
+            provident fuga porro voluptas veritatis velit in molestiae ipsum
+            doloremque eius deserunt odio officiis rerum, officia ipsa
+            praesentium suscipit, autem odit nam assumenda? Saepe magnam aperiam
+            rerum praesentium nihil amet facilis eaque earum aut expedita, vero
+            explicabo debitis, nobis aspernatur totam.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet,<a href="/">Dis.potencial diss.</a>
+            consectetur adipisicing elit. Dolorum, qui accusantium? Eveniet,
+            laborum et inventore, a soluta totam voluptatem recusandae quaerat
+            maiores eum mollitia excepturi ab nihil vero repellendus? Pariatur
+            officia similique corporis, incidunt repellat omnis delectus tempore
+            ratione beatae debitis, doloribus temporibus quo aperiam laudantium
+            voluptatem adipisci magni dolor!
+          </p>
+          <br />
+          <p class="pTag">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <b>Commodi blanditiis nam</b> odit ipsa quisquam odio fugit,
+            consequuntur temporibus, porro nostrum maiores? Placeat numquam
+            commodi voluptatibus.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            quidem ex rem alias necessitatibus non deleniti, porro recusandae
+            sapiente quas enim iusto itaque consequatur vel.
+          </p>
+        </section>
+        <br />
+        <section>
+          <h2>Heading</h2>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+            temporibus nulla ipsum perferendis fuga neque laudantium similique
+            iure ullam sed possimus eveniet modi suscipit quia, autem eligendi
+            ratione ea eos aut. Adipisci debitis sint numquam voluptates, ullam
+            maxime maiores assumenda?
+          </p>
+          <br />
+          <h3>Sub-heading</h3>
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, qui
+            non omnis ipsum laborum quo!
+          </p>
+          <br />
+          <p class="Example">Example code block</p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe
+            voluptates quisquam reiciendis animi distinctio nisi dicta eum,
+            nostrum minus ratione sapiente nesciunt iure nihil. Asperiores,
+            suscipit at voluptate reiciendis fugiat fugit facilis, officiis, ex
+            reprehenderit recusandae dicta laboriosam omnis illum incidunt nisi
+            non repellendus assumenda. Maiores cum deserunt molestiae!
+          </p>
+        </section>
+        <br />
+
+        <h2>sub-heading</h2>
+        <br />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fuga
+          laborum deleniti accusantium eos ducimus voluptatum saepe enim, et
+          officia. Quam eaque magnam et eius minima ratione, similique corrupti
+          voluptas molestiae pariatur quisquam iste laudantium cumque explicabo
+          perferendis voluptatem perspiciatis atque ex laboriosam facere eum
+          recusandae beatae placeat. Harum, enim.
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex explicabo
+          ad labore natus corporis sit?
+        </p>
+
+        <ol type="1">
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cum.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cum.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cum.
+          </li>
+        </ol>
+        <br />
+        <button onclick="btnDisable()" class="btn1">Older Post</button>
+        <button class="btn2">Newer Post</button>
+      </div>
+      <div id="box-2">
+        <i class="about">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo hic
+            doloremque aliquam animi dignissimos facilis cumque, laborum at
+            optio maxime.
+          </p>
+        </i>
+
+        <i
+          ><br />
+          <h3>Archives</h3>
+          <nav>
+            <a href="/">March 2014</a><br />
+            <a href="/">February 2014</a><br />
+            <a href="/">January2014</a><br />
+            <a href="/">November 2014</a><br />
+            <a href="/">December 2014</a><br />
+            <a href="/">October 2014</a><br />
+            <a href="/">September 2014</a><br />
+            <a href="/">August 2014</a><br />
+            <a href="/">July 2014</a><br />
+            <a href="/">June 2014</a><br />
+            <a href="/">May 2014</a><br />
+            <a href="/">April 2014</a><br />
+          </nav>
+        </i>
+        <br />
+        <i>
+          <h3>Elsewhere</h3>
+          <nav>
+            <a href="/">Github</a><br />
+            <a href="/">Twitter</a><br />
+            <a href="/">Facebook</a><br />
+          </nav>
+        </i>
+      </div>
+    </div>
+    <script>
+      function btnDisable() {
+        document.getElementsByClassName('btn1')[0].disabled = true;
+        document.getElementsByClassName('btn1')[0].textContent =
+          'button disabled';
+      }
+    </script>
+  </body>
+</html>

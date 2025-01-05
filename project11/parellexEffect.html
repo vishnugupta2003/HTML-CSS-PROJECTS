@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>parallx Effect</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* box-sizing: border-box; */
+      }
+      .wrapper {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 10px;
+      }
+      .container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        z-index: -1; /* z-index is used to bring content above the object/Image*/
+      }
+      .background {
+        height: 100%;
+        width: 100%;
+        transform: translateZ(-40px) scale(7);
+      }
+      .forground {
+        height: 50%;
+        transform: translateZ(-20px) scale(3);
+        bottom: -50%;
+      }
+      .background,
+      .forground {
+        position: absolute;
+        object-fit: cover; /* fit in frame*/
+        z-index: -1;
+      }
+      h1 {
+        position: absolute;
+        top: 3rem;
+        font-size: 10rem;
+        letter-spacing: 1rem;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      section {
+        background-color: rgb(45, 45, 45);
+        color: white;
+        padding: 5rem 0;
+        position: relative;
+      }
+      .bg1 {
+        background-image: url(./image/biking.jpg);
+      }
+      .bg2 {
+        background-image: url(./image/paraGliding.jpg);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+      }
+      .bg3 {
+        background-image: url(./image/surfing.jpg);
+      }
+      .secHeading {
+        font-size: 3.5rem;
+        padding: 0 10rem;
+      }
+      .text {
+        font-size: 1.5rem;
+        padding: 0 10rem;
+        margin: 5rem 0;
+      }
+      .bg {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      .desc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: white;
+        color: black;
+        transform: translate(-50%, -50%);
+        padding: 0.5rem 2.5rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img src="./image/mountainImage.png" class="background" />
+        <img src="./image/manImage.png" class="forground" />
+        <h1>ADVENTURE</h1>
+      </div>
+      <section>
+        <h2 class="secHeading">Adventure Time</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+        </p>
+        <div class="bg bg1">
+          <h2 class="desc">Biking</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+        </p>
+        <div class="bg bg2">
+          <h2 class="desc">Para Gliding</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+        </p>
+        <div class="bg bg3">
+          <h2 class="desc">Surfing</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          eaque laboriosam, sapiente atque nam, itaque reprehenderit non ea,
+          vitae odit tempora deleniti blanditiis officiis. Nulla, tempore ipsa
+          ipsum deserunt sequi fugiat, nemo ad repellendus quaerat numquam
+          mollitia porro! Pariatur alias nulla quo dolor nesciunt repellat error
+          veritatis atque, quis suscipit?
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

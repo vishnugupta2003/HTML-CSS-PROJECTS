@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Comfortaa:wght@300..700&display=swap');
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.container {
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+}
+
+.navbar li a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-image-title {
+    font-size: 30px;
+}
+
+.navbar button {
+    height: 30px;
+    width: 60px;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(73, 73, 243);
+    border-radius: 4px;
+}
+
+.navbar button:hover {
+    color: rgb(73, 73, 243);
+    background-color: white;
+}
+
+.main-image {
+    max-width: 1500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-image-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.main-image-text button {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(58, 130, 224);
+    color: white;
+}
+
+.main-image-text button:hover {
+    background-color: white;
+    color: rgb(58, 130, 224);
+}
+
+.grid-container {
+    margin: 50px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, 200px));
+    grid-gap: 80px;
+}
+
+.grid-container button {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: rgb(40, 40, 220);
+    border-radius: 4px;
+}
+
+.grid-container h3 {
+    font-size: 40px;
+}
+
+.para {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sec2-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px;
+}
+
+.right-part {
+    height: 320px;
+    width: 600px;
+}
+
+.right-part img {
+    height: 100%;
+    width: 100%;
+}
+
+.left-part {
+    width: 500px;
+    height: 300px;
+}
+
+.section3 {
+    margin: 30px;
+}
+
+.cart-header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 500px));
+    gap: 10px;
+    height: 400px;
+    text-align: center;
+    margin: 3rem;
+}
+
+.cart {
+    height: 200px;
+    width: 300px;
+}
+
+.cart img {
+    height: 100%;
+    width: 100%;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4 div {
+    text-align: center;
+}
+
+.section4 form {
+    height: 250px;
+    width: 400px;
+    border: 2px solid grey;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.section4 form input {
+    margin: 20px 0 0 5px;
+}
+
+.section4 form button {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: rgb(40, 40, 220);
+    border-radius: 4px;
+    margin: 20px 0 0 5px;
+}
+
+footer {
+    background-color: rgb(70, 68, 68);
+    color: white;
+    margin-top: 80px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer-middle {
+    display: flex;
+}
+
+.footer-middle li {
+    list-style: none;
+    position: relative;
+    left: -40px;
+}
+
+.footer-button {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-button {
+    color: rgb(40, 40, 220);
+    background-color: white;
+    border-radius: 4px;
+    margin: 20px 0 0 5px;
+    height: 30px;
+    width: 100px;
+}
+
+.register-button {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: rgb(40, 40, 220);
+    border-radius: 4px;
+    margin: 20px 0 0 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px
+}
+
+.footer-bottom img {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.footer-bottom b {
+    position: relative;
+    top: -20px;
+
+
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec2-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-container {
+        height: 1300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1px;
+    }
+
+    .para {
+        margin: 0px;
+    }
+
+    .section3 {
+        margin: 30px;
+        height: 800px;
+    }
+
+    .cart-header {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .cart-container {
+        display: flex;
+        gap: 30px;
+        height: 400px;
+        margin: 0;
+    }
+
+
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-image-text h1 {
+        font-size: 24px;
+    }
+
+    .main-image-text button {
+        height: 30px;
+        width: 100px;
+    }
+
+    #box1 {
+        height: 0px;
+        width: 0px;
+
+    }
+
+    .grid-container {
+        margin: 10px;
+        height: 1500px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        grid-template-rows: repeat(5, minmax(10px, 180px));
+
+    }
+
+    .grid-container button {
+        position: relative;
+        left: 100px;
+    }
+
+    .sec2-container {
+        display: grid;
+        grid-template-columns: 300px;
+        margin: 0;
+    }
+
+    .right-part {
+        height: 320px;
+        width: 300px;
+    }
+
+    .left-part {
+        width: 300px;
+        height: 400px;
+    }
+
+    .section3 {
+        margin: 0px;
+        height: 750px;
+
+    }
+
+    .cart-header {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .cart-container {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .cart {
+        height: 100px;
+        width: 100px;
+    }
+
+    .section4 form {
+        height: 350px;
+        width: 200px;
+        margin: 0;
+    }
+
+    footer {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-middle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-button {
+        position: relative;
+        left: -40px;
+    }
+
+    .footer-bottom {
+        margin: 0;
+    }
+
+
+}

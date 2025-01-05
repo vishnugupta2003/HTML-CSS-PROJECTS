@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> web AI App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span class="loader"></span>
+    <div class="container">
+        <div class="leftbox">
+            <!-- logo container -->
+            <div class="logo">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/ai-logo-png-transparent.png">
+                <p style="margin-top: 20px;">Ai Web App</p>
+            </div>
+            <!-- title container -->
+            <div>
+                <h3>AI-Powered Fun with Web App</h3>
+                <p style="margin-top: -10px;font-size:14px;color:gray">Let's play together</p>
+            </div>
+        
+        <!-- file select container -->
+        <div class="drop-zone">
+            <input id="file" type="file" hidden/>
+            <label for="file">choose your image</label>
+        </div>
+
+        <!-- service container -->
+
+        <div class="service-container">
+            <div class="service-item">
+                <input value="objectDetection" id="object detection" name=" service" type="radio"> 
+            <label for="object detection">object detection</label>
+            </div>
+
+            <div class="service-item">
+                <input value="faceDetection" id="Face detection" name=" service" type="radio"> 
+            <label for="Face detection">Face detection</label>
+            </div>
+
+            <div class="service-item">
+                <input value ="celebrityDetection" id="celebrity detection" name=" service" type="radio"> 
+                <label for="celebrity detection">celebrity detection</label>
+            </div>
+        </div>
+        <div >
+        <button class="magic-btn">see the magic</button>
+    </div>
+        </div>
+        <div class="rightbox">
+            <img class="rightimg" src="t.jpg" alt="cricket image" >
+       
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        box-shadow: 0 0 10px lightgray;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+      }
+
+      #content {
+        margin: 10px;
+      }
+      h2 {
+        display: inline;
+      }
+      button {
+        background-color: green;
+        color: white;
+        border-radius: 4px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img src="image1.jpg" alt="mug image" />
+
+        <div id="content">
+          <pre>COFFEE MUG</pre>
+          <h1>white Coffee Mug</h1>
+          <br />
+          <p>
+            coffee Mugs are sesigned to express emotions. These are acclaimed
+            for their amazing designs & superior Quality.
+          </p>
+          <br />
+
+          <h2>₹149</h2>
+          <strike> ₹230</strike><br /><br />
+          <button>&#128722; Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

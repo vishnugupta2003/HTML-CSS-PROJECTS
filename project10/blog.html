@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout2</title>
+    <style>
+      * {
+        margin-top: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        place-content: center;
+        height: 100%;
+        background-color: black;
+        margin: 20px;
+      }
+      .container {
+        display: grid;
+        background-color: hsl(0, 100%, 100%);
+
+        grid-template-rows: 3rem 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'hd hd' 'ls1 rs1' 'ls2 rs2' 'ls3 rs3';
+        gap: 0.9rem;
+        height: 100%;
+        width: 80%;
+        padding: 1rem;
+        overflow: auto;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      #header {
+        grid-area: hd;
+      }
+      .boxes {
+        background-color: hsl(0, 100%, 100%);
+        box-shadow: 0 0 10px -1px lightgray;
+        padding: 0.6rem;
+        display: flex;
+        flex-direction: column;
+      }
+      div:nth-child(even) > b {
+        color: blue;
+      }
+      div:nth-child(odd) > b {
+        color: green;
+      }
+      a {
+        margin-top: auto;
+      }
+      #box-1 {
+        grid-area: ls1;
+      }
+      #box-2 {
+        grid-area: ls2;
+      }
+      #box-3 {
+        grid-area: ls3;
+      }
+      #box-4 {
+        grid-area: rs1;
+      }
+      #box-5 {
+        grid-area: rs2;
+      }
+      #box-6 {
+        grid-area: rs3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" id="header">
+        <u>subscribe</u>
+        <h1><u>Blog Title</u></h1>
+        <p>&#x1F50D;</p>
+      </div>
+      <div class="boxes" id="box-1">
+        <b>World</b>
+        <h2>Example Blog Post</h2>
+        <small>NOV 12</small><br />
+        <p>This card represent an example blog post.</p>
+        <a href="readFullBlog.html">continue reading</a>
+      </div>
+      <div class="boxes" id="box-2">
+        <b>World</b>
+        <h2>Example Blog Post</h2>
+        <small>NOV 12</small>
+        <p>This card represent an example blog post.</p>
+        <a href="readFullBlog.html" class="a">continue reading</a>
+      </div>
+      <div class="boxes" id="box-3">
+        <b>World</b>
+        <h2>Example Blog Post</h2>
+        <small>NOV 12</small>
+        <p>This card represent an example blog post.</p>
+        <a href="readFullBlog.html">continue reading</a>
+      </div>
+      <div class="boxes" id="box-4">
+        <b>Design</b>
+        <h2>Post Title</h2>
+        <small>NOV 11</small>
+        <p>
+          This is a wider card supporting text below as a natural lead-9n to
+          additional content.
+        </p>
+        <a href="readFullBlog.html">continue reading</a>
+      </div>
+      <div class="boxes" id="box-5">
+        <b>Design</b>
+        <h2>Post Title</h2>
+        <small>NOV 11</small>
+        <p>
+          This is a wider card supporting text below as a natural lead-9n to
+          additional content.
+        </p>
+        <a href="readFullBlog.html">continue reading</a>
+      </div>
+      <div class="boxes" id="box-6">
+        <b>Design</b>
+        <h2>Post Title</h2>
+        <small>NOV 11</small>
+        <p>
+          This is a wider card supporting text below as a natural lead-9n to
+          additional content.
+        </p>
+        <a href="readFullBlog.html">continue reading</a>
+      </div>
+    </div>
+  </body>
+</html>
